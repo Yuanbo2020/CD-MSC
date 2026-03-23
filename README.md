@@ -314,7 +314,19 @@ If you need report figures or per-species/per-domain tables, use `technical_repo
  
 If you use the development dataset, the released baseline, or refer to the BioDCASE 2026 Cross-Domain Mosquito Species Classification task, please cite the following paper.
 
-BioDCASE 2026 CD-MSC Baseline
+BioDCASE 2026 CD-MSC Baseline: <a href="https://arxiv.org/abs/2603.20118" target="_blank">📄 PDF</a>
+
+```bibtex
+@misc{hou2026biodcase2026challengebaseline,
+      title={BioDCASE 2026 Challenge Baseline for Cross-Domain Mosquito Species Classification}, 
+      author={Yuanbo Hou and Vanja Zdravkovic and Marianne Sinka and Yunpeng Li and Wenwu Wang and Mark D. Plumbley and Kathy Willis and Stephen Roberts},
+      year={2026},
+      eprint={2603.20118},
+      archivePrefix={arXiv},
+      primaryClass={eess.AS},
+      url={https://arxiv.org/abs/2603.20118}, 
+}
+```
 
 MTRCNN model: <a href="https://doi.org/10.1109/ICASSP49660.2025.10890031" target="_blank">📄 PDF</a>
  
