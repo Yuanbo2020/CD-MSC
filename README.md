@@ -1,11 +1,47 @@
-![](./BioDCASE2026_Task5.png)
+<img src="./BioDCASE2026_Task5.png" width="50%">
 
 This repository contains the released baseline for the [BioDCASE 2026 Cross-Domain Mosquito Species Classification (CD-MSC)](https://biodcase.github.io/challenge2026/task5) task. It includes the baseline code, recommended development split metadata, extracted feature statistics, released checkpoints and logs for 10 fixed seeds, and report-ready result assets.
- 
+
+![NEWS](https://img.shields.io/badge/NEWS-Evaluation%20set%20released-red)
+
 - Official challenge page: [BioDCASE 2026 CD-MSC challenge](https://biodcase.github.io/challenge2026/task5)
 - Development dataset: [Zenodo Development dataset](https://zenodo.org/records/19095788)
+- **Evaluation set**: [released via the official challenge page](https://biodcase.github.io/challenge2026/task5)
 - Baseline paper: [BioDCASE 2026 Challenge Baseline for Cross-Domain Mosquito Species Classification](https://arxiv.org/abs/2603.20118)
+
+## Challenge Timeline
+
+| Date | Milestone |
+| --- | --- |
+| ~~01 Apr 2026~~ | ~~Challenge opening; datasets and baseline methods published~~ |
+| **01 Jun 2026** | **Evaluation set release** |
+| 15 Jun 2026 | Challenge submission deadline |
+| 30 Jun 2026 | Challenge results published |
+
+## Evaluation Set
+
+The evaluation set is released through the official challenge page. It is intended for final challenge submission and should not be used for model training or validation.
+
+Evaluation audio file names are randomized and do not contain species IDs, domain IDs, or seen/unseen-domain indicators. This is intentional: the official task evaluates cross-domain generalisation, and exposing domain information in the evaluation file names would leak information about the source domain.
+
+Participants only need to submit species predictions for the released evaluation clips. The organisers will compute:
+
+- `BA_seen`: balanced accuracy on clips from seen domains
+- `BA_unseen`: balanced accuracy on clips from unseen domains
+- `DSG = |BA_unseen - BA_seen|`: domain shift gap
+
+Official ranking is determined primarily by `BA_unseen`. `DSG` is used as the secondary ranking metric, with smaller values preferred. `BA_seen` is reported for reference.
+
+Submission files should contain one row per evaluation clip, using the released `file_id` values and a predicted species ID:
+
+```text
+file_id,predicted_species_id
+CDMSC2026_EVAL_000001,1
+CDMSC2026_EVAL_000002,3
+...
+```
   
+
 ## Repository Layout
 
 | Path | Purpose |
@@ -327,6 +363,17 @@ BioDCASE 2026 CD-MSC Baseline: <a href="https://arxiv.org/abs/2603.20118" target
       primaryClass={eess.AS},
       url={https://arxiv.org/abs/2603.20118}, 
 }
+```
+```bibtex
+@INPROCEEDINGS{BioL,
+  author={Hou, Yuanbo and Liu, Zhaoyi and Shen, Xin and Roberts, Stephen},
+  booktitle={ICASSP 2026 - 2026 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}, 
+  title={Learning Domain-Robust Bioacoustic Representations for Mosquito Species Classification with Contrastive Learning and Distribution Alignment}, 
+  year={2026},
+  volume={},
+  number={},
+  pages={15207-15211},
+  doi={10.1109/ICASSP55912.2026.11464393}}
 ```
 
 MTRCNN model: <a href="https://doi.org/10.1109/ICASSP49660.2025.10890031" target="_blank">📄 PDF</a>
