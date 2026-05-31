@@ -1,4 +1,4 @@
-<img src="./BioDCASE2026_Task5.png" width="50%">
+<img src="./BioDCASE2026_Task5.png" width="35%">
 
 This repository contains the released baseline for the [BioDCASE 2026 Cross-Domain Mosquito Species Classification (CD-MSC)](https://biodcase.github.io/challenge2026/task5) task. It includes the baseline code, recommended development split metadata, extracted feature statistics, released checkpoints and logs for 10 fixed seeds, and report-ready result assets.
 
