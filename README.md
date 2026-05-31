@@ -9,6 +9,8 @@ This repository contains the released baseline for the [BioDCASE 2026 Cross-Doma
 - **Evaluation set**: [released via the official challenge page](https://biodcase.github.io/challenge2026/task5)
 - Baseline paper: [BioDCASE 2026 Challenge Baseline for Cross-Domain Mosquito Species Classification](https://arxiv.org/abs/2603.20118)
 
+**Official submission system**: [Challenge submission](https://biodcase.github.io/challenge2026/submission)
+
 ## Challenge Timeline
 
 | Date | Milestone |
