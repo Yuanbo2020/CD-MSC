@@ -17,8 +17,8 @@ This repository contains the released baseline for the [BioDCASE 2026 Cross-Doma
 | --- | --- |
 | ~~01 Apr 2026~~ | ~~Challenge opening; datasets and baseline methods published~~ |
 | **01 Jun 2026** | **Evaluation set release** |
-| 15 Jun 2026 | Challenge submission deadline |
-| 30 Jun 2026 | Challenge results published |
+| 22 Jun 2026 | Challenge submission deadline |
+| 06 Jul 2026 | Challenge results published |
 
 ## Evaluation Set
 
